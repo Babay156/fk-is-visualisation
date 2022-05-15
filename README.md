@@ -1,4 +1,4 @@
-# Extension ФК Модуль визуализации Информационных Систем
+# Модуль визуализации Информационных Систем
 
 You've just created a new iTop extension, congratulations!
 
