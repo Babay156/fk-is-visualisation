@@ -4,7 +4,7 @@
     <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="redefine">
       <rank>20</rank>
     </menu>
-    <menu id="" xsi:type="OQLMenuNode" _delta="define">
+    <menu id="InformationSystem" xsi:type="OQLMenuNode" _delta="define">
       <rank>7</rank>
       <parent>ConfigManagement</parent>
       <oql>SELECT InformationSystem</oql>
