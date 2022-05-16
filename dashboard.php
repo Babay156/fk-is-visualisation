@@ -141,7 +141,7 @@ try
 	
 	$oFilter = new DBObjectSearch('SynchroDataSource');
 
-	$aExtraParams = array('open' => $bDoSearch, 'action' => utils::GetAbsoluteUrlAppRoot().'pages/exec.php', 'exec_module' => 'itop-synchro-dashboard', 'exec_page' => 'dashboard.php');
+	$aExtraParams = array('open' => $bDoSearch, 'action' => utils::GetAbsoluteUrlAppRoot().'pages/exec.php', 'exec_module' => 'fk-is-visualisation', 'exec_page' => 'dashboard.php');
     $oSearchBlock = new LegacySearchBlock($oFilter, $aExtraParams);
     $oSearchBlock->Display($oP, 'sds_filter');
 	
@@ -288,7 +288,7 @@ try
 	$oP->add_style('.badge_label { font-size: 0.6em; color: #999; margin-bottom: 20px; margin-top: -10px; }');
 	$oP->add_style('.badge_number { position: relative; top: 50%; transform: translateY(-50%); }');
 	$oP->add_linked_script(utils::GetAbsoluteUrlAppRoot().'js/raphael-min.js');
-	$oP->add_linked_script(utils::GetAbsoluteUrlModulesRoot().'itop-synchro-dashboard/js/justgage.1.0.1.min.js');
+	$oP->add_linked_script(utils::GetAbsoluteUrlModulesRoot().'fk-is-visualisation/js/justgage.1.0.1.min.js');
 
 	$oP->AddTabContainer('main');
 	$oP->SetCurrentTabContainer('main');
