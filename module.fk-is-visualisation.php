@@ -10,7 +10,7 @@ SetupWebPage::AddModule(
 	array(
 		// Identification
 		//
-		'label' => 'Information Systems',
+		'label' => 'ФК Модуль визуализации Информационных Систем',
 		'category' => 'business',
 
 		// Setup
