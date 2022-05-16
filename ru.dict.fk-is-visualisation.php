@@ -22,7 +22,7 @@
  */
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	// Dictionary entries go here
-	'UI:SynchroDashboard:Title' => 'Data Synchro Dashboard~~',
+	'UI:SynchroDashboard:Title' => 'Information Systems~~',
 	'UI:SynchroDashboard:StartDate' => 'Start Date~~',
 	'UI:SynchroDashboard:StartDate+' => 'Start date of the latest execution~~',
 	'UI:SynchroDashboard:Duration' => 'Duration~~',
@@ -44,5 +44,5 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:SynchroDashboard:Overview:Errors' => 'Errors~~',
 	'UI:SynchroDashboard:Overview:Warnings' => 'Warnings~~',
 	'UI:SynchroDashboard:Overview:PeakMemory' => 'Peak Memory~~',
-	'Menu:DataSourcesDashboard' => 'Synchronization Dashboard~~',
+	'Menu:DataSourcesDashboard' => 'Information Systems~~',
 ));
