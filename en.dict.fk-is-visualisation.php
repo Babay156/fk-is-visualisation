@@ -9,6 +9,6 @@
 Dict::Add('EN US', 'English', 'English', array(
 	// Dictionary entries go here
 	'Menu:InformationSystem' => 'Information Systems',
-
+	'Menu:InformationSystem+' => 'Information Systems',
 ));
 ?>

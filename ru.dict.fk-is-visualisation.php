@@ -9,6 +9,6 @@
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	// Dictionary entries go here
 	'Menu:InformationSystem' => 'Информационные Системы',
-
+	'Menu:InformationSystem+' => 'Информационные Системы',
 ));
 ?>
