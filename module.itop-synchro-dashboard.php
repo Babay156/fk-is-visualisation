@@ -10,12 +10,13 @@ SetupWebPage::AddModule(
 	array(
 		// Identification
 		//
-		'label' => 'Information Systems',
+		'label' => 'ФК Модуль визуализации Информационных Систем',
 		'category' => 'business',
 
 		// Setup
 		//
 		'dependencies' => array(
+			'vendor/autoload.php',
 			'itop-welcome-itil/2.5.0', // For the loading order of the menus
 			'itop-legacy-search-base/1.0.0',
 		),
