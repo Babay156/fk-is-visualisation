@@ -5,11 +5,6 @@
   <classes>
   </classes>
   <menus>
-    <menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ISDashboard" xsi:type="NewObjectMenuNode" _created_in="itop-config-mgmt" _altered_in="itop-config-mgmt" _alteration="added">
-      <rank>9</rank>
-      <parent>ConfigManagement</parent>
-      <class>ISDashboard</class>
-    </menu>
   </menus>
   <user_rights>
     <groups>

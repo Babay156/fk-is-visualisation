@@ -3,7 +3,7 @@
   <extension_code>fk-is-visualisation</extension_code>
   <version>1.0.0</version>
   <label><![CDATA[ФК Модуль визуализации Информационных Систем]]></label>
-  <description><![CDATA[ФК Модуль визуализации Информационных Систем]]></description>
+  <description><![CDATA[Put here a longer description of your extension]]></description>
   <mandatory>false</mandatory>
   <more_info_url></more_info_url>
 </extension>
