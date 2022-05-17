@@ -1,6 +1,11 @@
-$fk-is-visualisation--white: white;
+$fk-is-visualisation--white: #ffffff;
 $fk-is-visualisation--grey: #6B7280;
 $fk-is-visualisation--black: #111827;
+$fk-is-visualisation--yellow: #ff0000;
+$fk-is-visualisation--lime: #00ff00;
+$fk-is-visualisation--red: #ff0000;
+$fk-is-visualisation--blue: #0000ff;
+$fk-is-visualisation--purple: #ff00ff;
 
 $dashlet-compare-stats--delta-negative--background-color: #FECACA;
 $dashlet-compare-stats--delta-negative--color: #7F1D1D;
@@ -12,6 +17,8 @@ $dashlet-compare-stats--delta-positive--icon--color: #047857;
 .fk-is-visualisation{
   background-color: $fk-is-visualisation--white;
   padding: 4px 0;
+  white-space: nowrap;
+  border: 4px solid yellow;
   >a {
     display: flex;
     text-decoration: none;
@@ -22,24 +29,24 @@ $dashlet-compare-stats--delta-positive--icon--color: #047857;
 }
 .fk-is-visualisation--icon{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   padding-right: 6px;
 }
 .fk-is-visualisation--details{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: right;
 }
 .fk-is-visualisation--details--title {
-  color: $fk-is-visualisation--grey;
+  color: $fk-is-visualisation--black;
   font-size: 12px;
   font-weight: 500;
   margin: 0 0 4px;
 }
 .fk-is-visualisation--details--value {
   text-decoration: none;
-  color: $fk-is-visualisation--black;
+  color: $fk-is-visualisation--grey;
   font-weight: 600;
   font-size: 20px;
 }
