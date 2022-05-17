@@ -1,5 +1,6 @@
 .fk-is-visualisation {
   background-color: white;
+  border: 1px solid yellow;
   padding: 4px 0;
 }
 .fk-is-visualisation > a {
@@ -11,24 +12,26 @@
 }
 .fk-is-visualisation--icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   padding-right: 6px;
 }
 .fk-is-visualisation--details {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-end
+
 }
 .fk-is-visualisation--details--title {
-  color: #6B7280;
+  color: #111827;
   font-size: 12px;
   font-weight: 500;
   margin: 0 0 4px;
 }
 .fk-is-visualisation--details--value {
   text-decoration: none;
-  color: #111827;
+  color: #6B7280;
   font-weight: 600;
   font-size: 20px;
 }
