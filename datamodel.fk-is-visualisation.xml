@@ -14,41 +14,93 @@
         <interval>300</interval>
         </auto_reload>
         <cells>
-          <cell id="1" _delta="define">
-            <rank>1</rank>
-              <dashlets>
-                <dashlet id="InformationSystem" xsi:type="DashletHeaderDynamic">
-                  <rank>0</rank>
-                  <title></title>
-                  <icon>itop-storage-mgmt/images/fc-interface.png</icon>
-                  <subtitle>&#x418;&#x421;</subtitle>
-                  <query>SELECT InformationSystem</query>
-                  <group_by>status</group_by>
-                  <values>active,inactive</values>
-                </dashlet>
-              </dashlets>
-            </cell>
-            <cell id="1">
-              <rank>1</rank>
-              <dashlets>
-                <dashlet id="0" xsi:type="DashletEmptyCell">
-                  <rank>0</rank>
-                </dashlet>
-              </dashlets>
-            </cell>
-            <cell id="2">
-              <rank>2</rank>
-              <dashlets>
-                <dashlet id="0" xsi:type="DashletEmptyCell">
+          <cell id="0">
+            <rank>0</rank>
+            <dashlets>
+              <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_1" xsi:type="DashletStats">
                 <rank>0</rank>
+                <title>&#x41A;&#x43E;&#x43D;&#x442;&#x440;&#x430;&#x43A;&#x442;&#x44B;</title>
+                <query>SELECT Contract</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+            </dashlets>
+          </cell>
+          <cell id="1">
+            <rank>1</rank>
+            <dashlets>
+              <dashlet id="CUSTOM_InformationSystem_ID_row1_col0_2" xsi:type="DashletStats">
+                <rank>0</rank>
+                <title>&#x418;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x43E;&#x43D;&#x43D;&#x44B;&#x435; &#x421;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x44B;</title>
+                <query>SELECT InformationSystem</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+            </dashlets>
+          </cell>
+          <cell id="2">
+            <rank>2</rank>
+            <dashlets>
+              <dashlet id="CUSTOM_InformationSystem_ID_row2_col0_3" xsi:type="DashletStats">
+                <rank>0</rank>
+                <title>&#x41F;&#x440;&#x438;&#x43A;&#x43B;&#x430;&#x434;&#x43D;&#x43E;&#x435; &#x420;&#x435;&#x448;&#x435;&#x43D;&#x438;&#x435;</title>
+                <query>SELECT ApplicationSolution</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
               </dashlet>
             </dashlets>
           </cell>
           <cell id="3">
             <rank>3</rank>
             <dashlets>
-              <dashlet id="0" xsi:type="DashletEmptyCell">
+              <dashlet id="CUSTOM_InformationSystem_ID_row3_col0_4" xsi:type="DashletStats">
                 <rank>0</rank>
+                <title>&#x421;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430;</title>
+                <query>SELECT Server</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+            </dashlets>
+          </cell>
+          <cell id="4">
+            <rank>4</rank>
+            <dashlets>
+              <dashlet id="CUSTOM_InformationSystem_ID_row4_col0_5" xsi:type="DashletStats">
+                <rank>0</rank>
+                <title>&#x420;&#x430;&#x441;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;</title>
+                <query>SELECT Location</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+            </dashlets>
+          </cell>
+          <cell id="5">
+            <rank>5</rank>
+            <dashlets>
+              <dashlet id="CUSTOM_InformationSystem_ID_row5_col0_6" xsi:type="DashletStats">
+                <rank>0</rank>
+                <title>&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x44B;</title>
+                <query>SELECT Contact</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
               </dashlet>
             </dashlets>
           </cell>
