@@ -8,7 +8,7 @@
       <rank>7</rank>
       <parent>ConfigManagement</parent>
       <definition>
-        <layout>DashboardLayoutOneCol</layout>
+        <layout>DashboardLayoutThreeCols</layout>
         <auto_reload>
         <enabled>true</enabled>
         <interval>300</interval>
