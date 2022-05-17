@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.6">
   <menus>
-    <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="redefine">
+    <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="define">
       <rank>20</rank>
     </menu>
-    <menu id="InformationSystem" xsi:type="DashboardMenuNode">" _delta="redefine">
-      <rank>5</rank>
+    <menu id="InformationSystem" xsi:type="DashboardMenuNode" _delta="define">
+      <rank>7</rank>
       <parent>ConfigManagement</parent>
-        <definition>
-          <layout>DashboardLayoutOneCol</layout>
-          <auto_reload>
-            <enabled>true</enabled>
-            <interval>300</interval>
-          </auto_reload>
-          <cells>
-            <cell id="1" _delta="define">
-              <rank>1</rank>
-               <dashlets>
+      <definition>
+        <layout>DashboardLayoutOneCol</layout>
+        <auto_reload>
+        <enabled>true</enabled>
+        <interval>300</interval>
+        </auto_reload>
+        <cells>
+          <cell id="1" _delta="define">
+            <rank>1</rank>
+              <dashlets>
                 <dashlet id="InformationSystem" xsi:type="DashletHeaderDynamic">
                   <rank>0</rank>
                   <title></title>
@@ -40,19 +40,19 @@
               <rank>2</rank>
               <dashlets>
                 <dashlet id="0" xsi:type="DashletEmptyCell">
-                  <rank>0</rank>
-                </dashlet>
-              </dashlets>
-            </cell>
-            <cell id="3">
-              <rank>3</rank>
-              <dashlets>
-                <dashlet id="0" xsi:type="DashletEmptyCell">
-                  <rank>0</rank>
-                </dashlet>
-              </dashlets>
-            </cell>
-          </cells>
+                <rank>0</rank>
+              </dashlet>
+            </dashlets>
+          </cell>
+          <cell id="3">
+            <rank>3</rank>
+            <dashlets>
+              <dashlet id="0" xsi:type="DashletEmptyCell">
+                <rank>0</rank>
+              </dashlet>
+            </dashlets>
+          </cell>
+        </cells>
       </definition>
     </menu>
   </menus>
