@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.6">
   <menus>
-    <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="define">
+    <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="redefine">
       <rank>20</rank>
     </menu>
     <menu id="InformationSystem" xsi:type="DashboardMenuNode" _delta="define">

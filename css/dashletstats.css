@@ -1,0 +1,60 @@
+.fk-is-visualisation {
+  background-color: white;
+  padding: 4px 0;
+}
+.fk-is-visualisation > a {
+  display: flex;
+  text-decoration: none;
+}
+.fk-is-visualisation > a:hover {
+  text-decoration: none;
+}
+.fk-is-visualisation--icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 6px;
+}
+.fk-is-visualisation--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fk-is-visualisation--details--title {
+  color: #6B7280;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.fk-is-visualisation--details--value {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  font-size: 20px;
+}
+.dashlet-compare-stats--delta {
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 2px 4px;
+  margin: 2px 4px;
+  vertical-align: bottom;
+}
+.dashlet-compare-stats--delta.dashlet-compare-stats--delta-positive {
+  background-color: #A7F3D0;
+  color: #064E3B;
+}
+.dashlet-compare-stats--delta.dashlet-compare-stats--delta-positive > i {
+  color: #047857;
+}
+.dashlet-compare-stats--delta.dashlet-compare-stats--delta-negative {
+  background-color: #FECACA;
+  color: #7F1D1D;
+}
+.dashlet-compare-stats--delta.dashlet-compare-stats--delta-negative > i {
+  color: #DC2626;
+}
+.dashlet-compare-stats--delta > i {
+  font-size: 13px;
+  padding-right: 4px;
+}
