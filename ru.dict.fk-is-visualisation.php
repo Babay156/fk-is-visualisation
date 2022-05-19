@@ -11,7 +11,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:InformationSystem' => 'Информационные Системы',
 	'Menu:InformationSystem+' => 'Информационные Системы',
 	'UI:DashletStats:Label' => 'Dashlet Stats',
-	'UI:DashletStats:Description' => 'Дашлет с функциями агрегации и сравнения',
+	'UI:DashletStats:Description' => 'Дашлет с функциями агрегации и статистики',
 	'UI:DashletStats:Prop:Title' => 'Заголовок',
 	'UI:DashletStats:Prop:Query' => 'Запрос',
 	'UI:DashletStats:Prop:Function' => 'Функции агрегации',
@@ -32,7 +32,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:DashletStats:Value' => 'Unknown',
 
 	'UI:DashletStatsCompare:Label' => 'Dashlet Stats Compare',
-	'UI:DashletStatsCompare:Description' => 'Дашлет с функциями агрегации и сравнения',
+	'UI:DashletStatsCompare:Description' => 'Дашлет с функциями сравнения',
 	'UI:DashletStatsCompare:Prop:CompareQuery' => 'Сравнение',
 	'UI:DashletStatsCompare:Prop:CompareUnit' => 'Дельта',
 	'UI:DashletStatsCompare:Prop:CompareUnit:Difference' => 'Разница',
