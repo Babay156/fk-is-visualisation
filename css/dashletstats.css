@@ -1,39 +1,38 @@
-.fk-is-visualisation {
+.fk-is-dashlet-stats {
   background-color: white;
   padding: 4px 0;
 }
-.fk-is-visualisation > a {
+.fk-is-dashlet-stats > a {
   display: flex;
   text-decoration: none;
 }
-.fk-is-visualisation > a:hover {
+.fk-is-dashlet-stats > a:hover {
   text-decoration: none;
 }
-.fk-is-visualisation--icon {
+.fk-is-dashlet-stats--icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 6px;
 }
-.fk-is-visualisation--details {
+.fk-is-dashlet-stats--details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
-.fk-is-visualisation--details--title {
+.fk-is-dashlet-stats--details--title {
   color: #6B7280;
   font-size: 12px;
   font-weight: 500;
   margin: 0 0 4px;
 }
-.fk-is-visualisation--details--value {
+.fk-is-dashlet-stats--details--value {
   text-decoration: none;
   color: #111827;
   font-weight: 600;
   font-size: 20px;
 }
-.dashlet-compare-stats--delta {
+.fk-is-dashlet-compare-stats--delta {
   display: inline-block;
   font-size: 14px;
   border-radius: 5px;
@@ -41,21 +40,21 @@
   margin: 2px 4px;
   vertical-align: bottom;
 }
-.dashlet-compare-stats--delta.dashlet-compare-stats--delta-positive {
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-positive {
   background-color: #A7F3D0;
   color: #064E3B;
 }
-.dashlet-compare-stats--delta.dashlet-compare-stats--delta-positive > i {
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-positive > i {
   color: #047857;
 }
-.dashlet-compare-stats--delta.dashlet-compare-stats--delta-negative {
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-negative {
   background-color: #FECACA;
   color: #7F1D1D;
 }
-.dashlet-compare-stats--delta.dashlet-compare-stats--delta-negative > i {
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-negative > i {
   color: #DC2626;
 }
-.dashlet-compare-stats--delta > i {
+.fk-is-dashlet-compare-stats--delta > i {
   font-size: 13px;
   padding-right: 4px;
 }

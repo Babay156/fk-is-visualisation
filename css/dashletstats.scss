@@ -1,19 +1,17 @@
-$fk-is-visualisation--white: white;
-$fk-is-visualisation--grey: #6B7280;
-$fk-is-visualisation--black: #111827;
+$fk-is-dashlet-stats--white: white;
+$fk-is-dashlet-stats--grey: #6B7280;
+$fk-is-dashlet-stats--black: #111827;
 
-$dashlet-compare-stats--delta-negative--background-color: #FECACA;
-$dashlet-compare-stats--delta-negative--color: #7F1D1D;
-$dashlet-compare-stats--delta-negative--icon--color: #DC2626;
-$dashlet-compare-stats--delta-positive--background-color: #A7F3D0;
-$dashlet-compare-stats--delta-positive--color: #064E3B;
-$dashlet-compare-stats--delta-positive--icon--color: #047857;
+$fk-is-dashlet-compare-stats--delta-negative--background-color: #FECACA;
+$fk-is-dashlet-compare-stats--delta-negative--color: #7F1D1D;
+$fk-is-dashlet-compare-stats--delta-negative--icon--color: #DC2626;
+$fk-is-dashlet-compare-stats--delta-positive--background-color: #A7F3D0;
+$fk-is-dashlet-compare-stats--delta-positive--color: #064E3B;
+$fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 
-.fk-is-visualisation{
-  background-color: $fk-is-visualisation--white;
+.fk-is-dashlet-stats{
+  background-color: $fk-is-dashlet-stats--white;
   padding: 4px 0;
-  white-space: nowrap;
-  border: 4px solid yellow;
   >a {
     display: flex;
     text-decoration: none;
@@ -22,30 +20,30 @@ $dashlet-compare-stats--delta-positive--icon--color: #047857;
     }
   }
 }
-.fk-is-visualisation--icon{
+.fk-is-dashlet-stats--icon{
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 6px;
 }
-.fk-is-visualisation--details{
+.fk-is-dashlet-stats--details{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.fk-is-visualisation--details--title {
-  color: $fk-is-visualisation--grey;
+.fk-is-dashlet-stats--details--title {
+  color: $fk-is-dashlet-stats--grey;
   font-size: 12px;
   font-weight: 500;
   margin: 0 0 4px;
 }
-.fk-is-visualisation--details--value {
+.fk-is-dashlet-stats--details--value {
   text-decoration: none;
-  color: $ahws-dashlet-stats--black;
+  color: $fk-is-dashlet-stats--black;
   font-weight: 600;
   font-size: 20px;
 }
-.dashlet-compare-stats--delta{
+.fk-is-dashlet-compare-stats--delta{
   display: inline-block;
   font-size: 14px;
   border-radius: 5px;
@@ -53,18 +51,18 @@ $dashlet-compare-stats--delta-positive--icon--color: #047857;
   margin: 2px 4px;
   vertical-align: bottom;
   
-  &.dashlet-compare-stats--delta-positive{
-    background-color: $dashlet-compare-stats--delta-positive--background-color;
-    color: $dashlet-compare-stats--delta-positive--color;
+  &.fk-is-dashlet-compare-stats--delta-positive{
+    background-color: $fk-is-dashlet-compare-stats--delta-positive--background-color;
+    color: $fk-is-dashlet-compare-stats--delta-positive--color;
     >i{
-      color: $dashlet-compare-stats--delta-positive--icon--color
+      color: $fk-is-dashlet-compare-stats--delta-positive--icon--color
     }
   }
-  &.dashlet-compare-stats--delta-negative{
-    background-color: $dashlet-compare-stats--delta-negative--background-color;
-    color: $dashlet-compare-stats--delta-negative--color;
+  &.fk-is-dashlet-compare-stats--delta-negative{
+    background-color: $fk-is-dashlet-compare-stats--delta-negative--background-color;
+    color: $fk-is-dashlet-compare-stats--delta-negative--color;
     >i{
-      color: $dashlet-compare-stats--delta-negative--icon--color
+      color: $fk-is-dashlet-compare-stats--delta-negative--icon--color
     }
   }
   >i{

@@ -15,7 +15,7 @@ class DashletStatsCompare extends DashletStats{
 	{
 		return array(
 			'label' => Dict::S('UI:DashletStatsCompare:Label'),
-			'icon' => 'env-'.utils::GetCurrentEnvironment().'/fk-is-visualisation/img/icons8-statistics-48.png',
+			'icon' => 'env-'.utils::GetCurrentEnvironment().'/fk-is-dashlet-stats/img/icons8-statistics-48.png',
 			'description' => Dict::S('UI:DashletStatsCompare:Description'),
 		);
 	}
