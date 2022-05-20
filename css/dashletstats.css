@@ -1,9 +1,15 @@
 .fk-is-dashlet-stats {
   background-color: white;
+  margin 4px 0;
   padding: 4px 0;
+  border: 4px solid green;
+  height: 100px;
+  width: 200px;
 }
 .fk-is-dashlet-stats > a {
   display: flex;
+  align-content: space-evently;
+  justify-content: space-evenly;
   text-decoration: none;
 }
 .fk-is-dashlet-stats > a:hover {
