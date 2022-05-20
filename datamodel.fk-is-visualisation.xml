@@ -48,7 +48,7 @@
                 <percentage_query></percentage_query>
               </dashlet>
               <dashlet id="CUSTOM_InformationSystem_ID_row3_col0_4" xsi:type="DashletStats">
-                <rank>0</rank>
+                <rank>3</rank>
                 <title>&#x421;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430;</title>
                 <query>SELECT Server</query>
                 <function>count</function>
@@ -58,7 +58,7 @@
                 <percentage_query></percentage_query>
               </dashlet>
               <dashlet id="CUSTOM_InformationSystem_ID_row4_col0_5" xsi:type="DashletStats">
-                <rank>0</rank>
+                <rank>4</rank>
                 <title>&#x420;&#x430;&#x441;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;</title>
                 <query>SELECT Location</query>
                 <function>count</function>
@@ -68,7 +68,7 @@
                 <percentage_query></percentage_query>
               </dashlet>
               <dashlet id="CUSTOM_InformationSystem_ID_row5_col0_6" xsi:type="DashletStats">
-                <rank>0</rank>
+                <rank>5</rank>
                 <title>&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x44B;</title>
                 <query>SELECT Contact</query>
                 <function>count</function>
