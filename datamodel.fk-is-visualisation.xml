@@ -8,14 +8,14 @@
       <rank>7</rank>
       <parent>ConfigManagement</parent>
       <definition>
-        <layout>DashboardLayoutThreeCols</layout>
+        <layout>DashboardLayoutOneCol</layout>
         <auto_reload>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <interval>300</interval>
         </auto_reload>
         <cells>
           <cell id="0">
-            <rank>1</rank>
+            <rank>0</rank>
             <dashlets>
               <dashlet id="CUSTOM_InformationSystem_ID_row1_col0_2" xsi:type="DashletStats">
                 <rank>0</rank>
@@ -27,13 +27,8 @@
                 <unit_position>after</unit_position>
                 <percentage_query></percentage_query>
               </dashlet>
-            </dashlets>
-          </cell>
-          <cell id="1">
-            <rank>0</rank>
-            <dashlets>
               <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_1" xsi:type="DashletStats">
-                <rank>0</rank>
+                <rank>1</rank>
                 <title>&#x41A;&#x43E;&#x43D;&#x442;&#x440;&#x430;&#x43A;&#x442;&#x44B;</title>
                 <query>SELECT Contract</query>
                 <function>count</function>
@@ -42,13 +37,8 @@
                 <unit_position>after</unit_position>
                 <percentage_query></percentage_query>
               </dashlet>
-            </dashlets>
-          </cell>
-          <cell id="2">
-            <rank>2</rank>
-            <dashlets>
               <dashlet id="CUSTOM_InformationSystem_ID_row2_col0_3" xsi:type="DashletStats">
-                <rank>0</rank>
+                <rank>2</rank>
                 <title>&#x41F;&#x440;&#x438;&#x43A;&#x43B;&#x430;&#x434;&#x43D;&#x43E;&#x435; &#x420;&#x435;&#x448;&#x435;&#x43D;&#x438;&#x435;</title>
                 <query>SELECT ApplicationSolution</query>
                 <function>count</function>
@@ -57,11 +47,6 @@
                 <unit_position>after</unit_position>
                 <percentage_query></percentage_query>
               </dashlet>
-            </dashlets>
-          </cell>
-          <cell id="3">
-            <rank>3</rank>
-            <dashlets>
               <dashlet id="CUSTOM_InformationSystem_ID_row3_col0_4" xsi:type="DashletStats">
                 <rank>0</rank>
                 <title>&#x421;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430;</title>
@@ -72,11 +57,6 @@
                 <unit_position>after</unit_position>
                 <percentage_query></percentage_query>
               </dashlet>
-            </dashlets>
-          </cell>
-          <cell id="4">
-            <rank>4</rank>
-            <dashlets>
               <dashlet id="CUSTOM_InformationSystem_ID_row4_col0_5" xsi:type="DashletStats">
                 <rank>0</rank>
                 <title>&#x420;&#x430;&#x441;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;</title>
@@ -87,11 +67,6 @@
                 <unit_position>after</unit_position>
                 <percentage_query></percentage_query>
               </dashlet>
-            </dashlets>
-          </cell>
-          <cell id="5">
-            <rank>5</rank>
-            <dashlets>
               <dashlet id="CUSTOM_InformationSystem_ID_row5_col0_6" xsi:type="DashletStats">
                 <rank>0</rank>
                 <title>&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x44B;</title>
