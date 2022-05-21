@@ -12,6 +12,9 @@ $fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 .fk-is-dashlet-stats{
   background-color: $fk-is-dashlet-stats--white;
   padding: 4px 0;
+  display: flex;
+  align-content: space-evenly;
+  justify-content: space-evenly;
   >a {
     display: flex;
     text-decoration: none;
@@ -23,13 +26,13 @@ $fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 .fk-is-dashlet-stats--icon{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   padding-right: 6px;
 }
 .fk-is-dashlet-stats--details{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
 }
 .fk-is-dashlet-stats--details--title {
   color: $fk-is-dashlet-stats--grey;
@@ -39,6 +42,7 @@ $fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 }
 .fk-is-dashlet-stats--details--value {
   text-decoration: none;
+  text-align: right;
   color: $fk-is-dashlet-stats--black;
   font-weight: 600;
   font-size: 20px;

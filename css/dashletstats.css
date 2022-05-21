@@ -8,6 +8,7 @@
 }
 .fk-is-dashlet-stats > a {
   display: flex;
+  flex-direction: column;
   text-decoration: none;
 }
 .fk-is-dashlet-stats > a:hover {
