@@ -8,7 +8,7 @@ class DashletStatsUIExtension implements iPageUIExtension
 	 */
 	public function GetNorthPaneHtml(\iTopWebPage $oPage)
 	{
-		$oPage->add_saas('env-'.utils::GetCurrentEnvironment().'/fk-is-visualisation/css/dashletstats.scss');
+		$oPage->add_saas('env-'.utils::GetCurrentEnvironment().'/fk-is-dashlet-stats/css/dashletstats.scss');
 	}
 
 	/**
