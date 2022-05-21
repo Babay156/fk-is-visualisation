@@ -36,7 +36,7 @@ class DashletStatsView{
 		<div class="fk-is-dashlet-stats--icon">
 			$sHtmlIconUrl
 		</div>
-		<h3 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
+		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
 	</div>
 	</a>
 </div>
