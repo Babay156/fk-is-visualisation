@@ -1,20 +1,19 @@
+$fk-is-dashlet-stats--white: white;
 $fk-is-dashlet-stats--grey: #6B7280;
 $fk-is-dashlet-stats--black: #111827;
 
-$fk-is-dashlet-compare-stats--delta-negative--background-color: var(--ibo-color-red-100);
-$fk-is-dashlet-compare-stats--delta-negative--color: var(--ibo-color-red-900);
-$fk-is-dashlet-compare-stats--delta-negative--icon--color: var(--ibo-color-red-800);
-$fk-is-dashlet-compare-stats--delta-positive--background-color: var(--ibo-color-green-100);
-$fk-is-dashlet-compare-stats--delta-positive--color: var(--ibo-color-green-950);
-$fk-is-dashlet-compare-stats--delta-positive--icon--color: var(--ibo-color-green-900);
-$fk-is-dashlet-compare-stats--delta-neutral--background-color: var(--ibo-color-grey-200);
-$fk-is-dashlet-compare-stats--delta-neutral--color: var(--ibo-color-grey-950);
-$fk-is-dashlet-compare-stats--delta-neutral--icon--color: var(--ibo-color-grey-900);
+$fk-is-dashlet-compare-stats--delta-negative--background-color: #FECACA;
+$fk-is-dashlet-compare-stats--delta-negative--color: #7F1D1D;
+$fk-is-dashlet-compare-stats--delta-negative--icon--color: #DC2626;
+$fk-is-dashlet-compare-stats--delta-positive--background-color: #A7F3D0;
+$fk-is-dashlet-compare-stats--delta-positive--color: #064E3B;
+$fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 
 .fk-is-dashlet-stats{
+  background-color: $fk-is-dashlet-stats--white;
+  padding: 4px 0;
   >a {
     display: flex;
-    align-items: center;
     text-decoration: none;
     &:hover{
       text-decoration: none;
@@ -33,34 +32,24 @@ $fk-is-dashlet-compare-stats--delta-neutral--icon--color: var(--ibo-color-grey-9
   justify-content: center;
 }
 .fk-is-dashlet-stats--details--title {
-  color: var(--ibo-color-grey-800);
-  font-size: 1.17rem;
+  color: $fk-is-dashlet-stats--grey;
+  font-size: 12px;
+  font-weight: 500;
   margin: 0 0 4px;
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
 }
 .fk-is-dashlet-stats--details--value {
-  display: flex;
-  align-items: center;
   text-decoration: none;
-  color: var(--ibo-color-grey-900);
-  font-size: 1.5rem;
-}
-.fk-is-dashlet-stats--details--value--realvalue{
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-right: 4px;
+  color: $fk-is-dashlet-stats--black;
+  font-weight: 600;
+  font-size: 20px;
 }
 .fk-is-dashlet-compare-stats--delta{
   display: inline-block;
-  font-size: 1.17rem;
-  font-weight: 600;
+  font-size: 14px;
   border-radius: 5px;
   padding: 2px 4px;
-  margin: 2px 8px;
+  margin: 2px 4px;
   vertical-align: bottom;
-  white-space: nowrap;
   
   &.fk-is-dashlet-compare-stats--delta-positive{
     background-color: $fk-is-dashlet-compare-stats--delta-positive--background-color;
@@ -74,13 +63,6 @@ $fk-is-dashlet-compare-stats--delta-neutral--icon--color: var(--ibo-color-grey-9
     color: $fk-is-dashlet-compare-stats--delta-negative--color;
     >i{
       color: $fk-is-dashlet-compare-stats--delta-negative--icon--color
-    }
-  }
-  &.fk-is-dashlet-compare-stats--delta-neutral{
-    background-color: $fk-is-dashlet-compare-stats--delta-neutral--background-color;
-    color: $fk-is-dashlet-compare-stats--delta-neutral--color;
-    >i{
-      color: $fk-is-dashlet-compare-stats--delta-neutral--icon--color
     }
   }
   >i{

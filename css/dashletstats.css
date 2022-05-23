@@ -1,1 +1,60 @@
-.fk-is-dashlet-stats>a{display:flex;align-items:center;text-decoration:none}.fk-is-dashlet-stats>a:hover{text-decoration:none}.fk-is-dashlet-stats--icon{display:flex;flex-direction:column;justify-content:center;padding-right:6px}.fk-is-dashlet-stats--details{display:flex;flex-direction:column;justify-content:center}.fk-is-dashlet-stats--details--title{color:var(--ibo-color-grey-800);font-size:1.17rem;margin:0 0 4px;white-space:nowrap;overflow-x:hidden;text-overflow:ellipsis}.fk-is-dashlet-stats--details--value{display:flex;align-items:center;text-decoration:none;color:var(--ibo-color-grey-900);font-size:1.5rem}.fk-is-dashlet-stats--details--value--realvalue{font-size:2.5rem;font-weight:700;margin-right:4px}.fk-is-dashlet-compare-stats--delta{display:inline-block;font-size:1.17rem;font-weight:600;border-radius:5px;padding:2px 4px;margin:2px 8px;vertical-align:bottom;white-space:nowrap}.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-positive{background-color:var(--ibo-color-green-100);color:var(--ibo-color-green-950)}.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-positive>i{color:var(--ibo-color-green-900)}.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-negative{background-color:var(--ibo-color-red-100);color:var(--ibo-color-red-900)}.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-negative>i{color:var(--ibo-color-red-800)}.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-neutral{background-color:var(--ibo-color-grey-200);color:var(--ibo-color-grey-950)}.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-neutral>i{color:var(--ibo-color-grey-900)}.fk-is-dashlet-compare-stats--delta>i{font-size:13px;padding-right:4px}
+.fk-is-dashlet-stats {
+  background-color: white;
+  padding: 4px 0;
+}
+.fk-is-dashlet-stats > a {
+  display: flex;
+  text-decoration: none;
+}
+.fk-is-dashlet-stats > a:hover {
+  text-decoration: none;
+}
+.fk-is-dashlet-stats--icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 6px;
+}
+.fk-is-dashlet-stats--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fk-is-dashlet-stats--details--title {
+  color: #6B7280;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.fk-is-dashlet-stats--details--value {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  font-size: 20px;
+}
+.fk-is-dashlet-compare-stats--delta {
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 2px 4px;
+  margin: 2px 4px;
+  vertical-align: bottom;
+}
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-positive {
+  background-color: #A7F3D0;
+  color: #064E3B;
+}
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-positive > i {
+  color: #047857;
+}
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-negative {
+  background-color: #FECACA;
+  color: #7F1D1D;
+}
+.fk-is-dashlet-compare-stats--delta.fk-is-dashlet-compare-stats--delta-negative > i {
+  color: #DC2626;
+}
+.fk-is-dashlet-compare-stats--delta > i {
+  font-size: 13px;
+  padding-right: 4px;
+}

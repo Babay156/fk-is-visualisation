@@ -4,8 +4,6 @@ class DashletStatsView{
 	private $sTitle;
 	private $sClass;
 	private $sFilter;
-	private $sValueUnit;
-	private $sValueUnitPosition;
 
 	/**
 	 * DashletGroupByPlusView constructor.
@@ -15,46 +13,35 @@ class DashletStatsView{
 	 * @param $sClass
 	 * @param $sFilter
 	 */
-	public function __construct($sTitle, $sValue, $sClass, $sFilter, $sValueUnit, $sValueUnitPosition) 
+	public function __construct($sTitle, $sValue, $sClass, $sFilter) 
 	{
 		$this->sValue = $sValue;
 		$this->sTitle = $sTitle;
 		$this->sClass = $sClass;
 		$this->sFilter = $sFilter;
-		$this->sValueUnit = $sValueUnit;
-		$this->sValueUnitPosition = $sValueUnitPosition;
 	}
 	public function Display($oPage, $sDashletId, $bEditMode)
 	{
 		
 		$sHtmlTitle = $this->sTitle;
 		$sHtmlValue = $this->sValue;
-		$sHtmlUnit = $this->sValueUnit;
-		$sHtmlUnitBefore = '';
-		$sHtmlUnitAfter = '';
-		if($this->sValueUnitPosition === 'before'){
-			$sHtmlUnitBefore = '<span class="fk-is-dashlet-stats--details--value--unit">'.$sHtmlUnit.'</span>';
-		}
-		else {
-			$sHtmlUnitAfter = '<span class="fk-is-dashlet-stats--details--value--unit">'.$sHtmlUnit.'</span>';
-		}
-		$sHtmlIconUrl = MetaModel::GetClassIcon($this->sClass, false);
+		$sHtmlIconUrl = MetaModel::GetClassIcon($this->sClass);
 		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/UI.php?operation=search&filter=".$sFilter = rawurlencode($this->sFilter->serialize());
-		return
+		$oPage->add(
 <<<HTML
-<div id="$sDashletId" class="ibo-dashlet fk-is-dashlet-stats">
+<div id="$sDashletId" class="dashlet-content fk-is-dashlet-stats">
 	<a href="$sLinkUrl">
-	<div class="ibo-dashlet-badge--icon-container">
-		<img src="$sHtmlIconUrl" class="ibo-dashlet-badge--icon ibo-class-icon ibo-is-medium"/>
+	<div class="fk-is-dashlet-stats--icon">
+		$sHtmlIconUrl
 	</div>
 	<div class="fk-is-dashlet-stats--details">
-		<div class="fk-is-dashlet-stats--details--value">$sHtmlUnitBefore<span class="fk-is-dashlet-stats--details--value--realvalue">$sHtmlValue</span>$sHtmlUnitAfter</div>
-		<div class="fk-is-dashlet-stats--details--title">$sHtmlTitle</div>
+		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
+		<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
 	</div>
 	</a>
 </div>
 HTML
-		;
+		);
 
 	}
 

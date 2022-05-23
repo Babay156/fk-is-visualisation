@@ -15,59 +15,40 @@ class DashletStatsCompareView{
 	 * @param $sClass
 	 * @param $sFilter
 	 */
-	public function __construct($sTitle, $sValue, $iDeltaValue, $sClass, $sFilter, $sValueUnit, $sValueUnitPosition) 
+	public function __construct($sTitle, $sValue, $iDeltaValue, $sClass, $sFilter) 
 	{
 		$this->sValue = $sValue;
 		$this->iDeltaValue = $iDeltaValue;
 		$this->sTitle = $sTitle;
 		$this->sClass = $sClass;
 		$this->sFilter = $sFilter;
-		$this->sValueUnit = $sValueUnit;
-		$this->sValueUnitPosition = $sValueUnitPosition;
 	}
 	public function Display($oPage, $sDashletId, $bEditMode)
 	{
 		
 		$sHtmlTitle = $this->sTitle;
 		$sHtmlValue = $this->sValue;
-		$sHtmlIconUrl = MetaModel::GetClassIcon($this->sClass, false);
-		$sHtmlUnit = $this->sValueUnit;
-		$sHtmlUnitBefore = '';
-		$sHtmlUnitAfter = '';
-		if($this->sValueUnitPosition === 'before'){
-			$sHtmlUnitBefore = '<span class="fk-is-dashlet-stats--details--value--unit">'.$sHtmlUnit.'</span>';
-		}
-		else {
-			$sHtmlUnitAfter = '<span class="fk-is-dashlet-stats--details--value--unit">'.$sHtmlUnit.'</span>';
-		}
+		$sHtmlIconUrl = MetaModel::GetClassIcon($this->sClass);
 		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/UI.php?operation=search&filter=".$sFilter = rawurlencode($this->sFilter->serialize());
 		
-		$sDeltaIcon = '';
-		if ($this->iDeltaValue > 0){
-			$sDeltaIcon = '<span class="fk-is-dashlet-compare-stats--delta fk-is-dashlet-compare-stats--delta-positive"><i class="fas fa-arrow-up"></i>'.$this->iDeltaValue.'</span>';
-		}
-		else if ($this->iDeltaValue < 0){
-
-			$sDeltaIcon = '<span class="fk-is-dashlet-compare-stats--delta fk-is-dashlet-compare-stats--delta-negative"><i class="fas fa-arrow-down"></i>'.$this->iDeltaValue.'</span>';
-		}
-		else{
-			$sDeltaIcon = '<span class="fk-is-dashlet-compare-stats--delta fk-is-dashlet-compare-stats--delta-neutral"><i class="fas fa-equals"></i>'.$this->iDeltaValue.'</span>';
-		}
-		return
+		$sDeltaIcon = ($this->iDeltaValue > 0 ? '<span class="fk-is-dashlet-compare-stats--delta fk-is-dashlet-compare-stats--delta-positive"><i class="fas fa-arrow-up"></i>'.$this->iDeltaValue.'</span>'
+			: '<span class="fk-is-dashlet-compare-stats--delta fk-is-dashlet-compare-stats--delta-negative"><i class="fas fa-arrow-down"></i>'.$this->iDeltaValue.'</span>');
+		$oPage->add(
 <<<HTML
-<div id="$sDashletId" class="ibo-dashlet fk-is-dashlet-stats">
+<div id="$sDashletId" class="dashlet-content fk-is-dashlet-stats">
 	<a href="$sLinkUrl">
-	<div class="ibo-dashlet-badge--icon-container">
-		<img src="$sHtmlIconUrl" class="ibo-dashlet-badge--icon ibo-class-icon ibo-is-medium"/>
+	<div class="fk-is-dashlet-stats--icon">
+		$sHtmlIconUrl
 	</div>
 	<div class="fk-is-dashlet-stats--details">
-		<div class="fk-is-dashlet-stats--details--value">$sHtmlUnitBefore<span class="fk-is-dashlet-stats--details--value--realvalue">$sHtmlValue</span>$sHtmlUnitAfter $sDeltaIcon</div>
-		<div class="fk-is-dashlet-stats--details--title">$sHtmlTitle</div>
+		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
+		<div class="fk-is-dashlet-stats--details--value">$sHtmlValue $sDeltaIcon</div>
 	</div>
 	</a>
 </div>
 HTML
-		;
+		);
+
 	}
 
 
