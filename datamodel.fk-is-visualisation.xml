@@ -4,12 +4,57 @@
     <class id="InformationSystem" _delta="if_exists">
       <fields>
         <field id="ShortName" xsi:type="AttributeText" _delta="define">
-          <sql>ShortName</sql>
+          <sql>Is</sql>
           <default_value/>
           <is_null_allowed>true</is_null_allowed>
         </field>
       </fields>
      </class>
+    <class id="Contract" _delta="if_exists">
+      <fields>
+        <field id="ShortName" xsi:type="AttributeText" _delta="define">
+          <sql>K</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+     </class>
+    <class id="ApplicationSolution" _delta="if_exists">
+      <fields>
+        <field id="ShortName" xsi:type="AttributeText" _delta="define">
+          <sql>As</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+     </class>         
+      <class id="Server" _delta="if_exists">
+      <fields>
+        <field id="ShortName" xsi:type="AttributeText" _delta="define">
+          <sql>Se</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+     </class>
+      <class id="Location" _delta="if_exists">
+      <fields>
+        <field id="ShortName" xsi:type="AttributeText" _delta="define">
+          <sql>Lo</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+     </class>
+      <class id="Contact" _delta="if_exists">
+      <fields>
+        <field id="ShortName" xsi:type="AttributeText" _delta="define">
+          <sql>Co</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+     </class>           
   </classes>
   <menus>
     <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="redefine">
