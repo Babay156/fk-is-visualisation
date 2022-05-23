@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.6">
+  <classes>
+    <class id="InformationSystem" _delta="if_exists">
+      <fields>
+        <field id="ShortName" xsi:type="AttributeText" _delta="define">
+          <sql>ShortName</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+     </class>
+  </classes>
   <menus>
     <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="redefine">
       <rank>20</rank>
