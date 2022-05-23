@@ -10,6 +10,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	// Dictionary entries go here
 	'Menu:InformationSystem' => 'Информационные Системы',
 	'Menu:InformationSystem+' => 'Информационные Системы',
+	'Class:InformationSystem/Attribute:ShortName' => 'Is',
+	'Class:ApplicationSolution/Attribute:ShortName' => 'As',
+	'Class:Contract/Attribute:ShortName' => 'K',
+	'Class:Server/Attribute:ShortName' => 'Se',
+	'Class:Location/Attribute:ShortName' => 'Lo',
+	'Class:Contact/Attribute:ShortName' => 'Co',
+	'UI:DashletStats:Icon' => 'Dashlet Icon',
 	'UI:DashletStats:Label' => 'Dashlet Stats',
 	'UI:DashletStats:Description' => 'Дашлет с функциями агрегации и статистики',
 	'UI:DashletStats:Prop:Title' => 'Заголовок',

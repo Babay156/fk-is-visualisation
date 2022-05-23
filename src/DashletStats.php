@@ -20,7 +20,7 @@ class DashletStats extends Dashlet
 	{
 		return array(
 			'label' => Dict::S('UI:DashletStats:Label'),
-			'icon' => 'env-'.utils::GetCurrentEnvironment().'/fk-is-visualisation/img/icons8-calculator-96.png',
+			'icon' => Dict::S('UI:DashletStats:Icon'),
 			'description' => Dict::S('UI:DashletStats:Description'),
 		);
 	}
