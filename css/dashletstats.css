@@ -1,9 +1,11 @@
 .fk-is-dashlet-stats {
-  display: flex !important;
   background-color: white;
   padding: 0px 0px;
   border: 3px solid green !important;
-  margin: 2px !important;
+  margin: 0 2px !important;
+}
+.fk-is-dashlet-stats > td {
+  display: flex !important;
 }
 .fk-is-dashlet-stats > a {
   display: flex;
@@ -61,7 +63,6 @@
   font-size: 13px;
   padding-right: 4px;
 }
-.layout_last_used_rank{
-  display: flex !important;
-  border: 3px solid green !important;
+#InformationSystem .layout_last_used_rank {
+  border: none !important;
 }
