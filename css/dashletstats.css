@@ -9,25 +9,16 @@
 .fk-is-dashlet-stats > a:hover {
   text-decoration: none;
 }
-.fk-is-dashlet-stats table{
-  display: flex;
-  border: none;
-}
-.fk-is-dashlet-stats td{
-  margin: 2px;
-  padding: 4px 4px;
-  border: 3px solid green;
-}
 .fk-is-dashlet-stats--icon {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: right;
   padding-right: 6px;
 }
 .fk-is-dashlet-stats--details {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: right;
 }
 .fk-is-dashlet-stats--details--title {
   color: #6B7280;
@@ -66,4 +57,8 @@
 .fk-is-dashlet-compare-stats--delta > i {
   font-size: 13px;
   padding-right: 4px;
+}
+#table{
+  border: none;
+  display: flex;
 }
