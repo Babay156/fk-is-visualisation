@@ -29,6 +29,7 @@ class DashletStatsView{
 		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/UI.php?operation=search&filter=".$sFilter = rawurlencode($this->sFilter->serialize());
 		$oPage->add(
 <<<HTML
+<div id="tableview" class="
 <div id="$sDashletId" class="dashlet-content fk-is-dashlet-stats">
 	<a href="$sLinkUrl">
 	<div class="fk-is-dashlet-stats--icon">

@@ -9,25 +9,9 @@ $fk-is-dashlet-compare-stats--delta-positive--background-color: #A7F3D0;
 $fk-is-dashlet-compare-stats--delta-positive--color: #064E3B;
 $fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 
-.dashlet-content{
-  width: 200px;
-  height: 80px;
-  border: 3px solid green;
-  margin: 2px 2px;
-}
-
-.td{
-  display: flex;
-  align-content: flex-start;
-  justify-content: space-evenly;
-  border: none;
-}
-
 .fk-is-dashlet-stats{
   background-color: $fk-is-dashlet-stats--white;
   padding: 4px 4px;
-  border: 3px solid green;
-  margin: 2px 2px;
   >a {
     display: flex;
     text-decoration: none;

@@ -1,6 +1,9 @@
 .fk-is-dashlet-stats {
+  display: flex;
   background-color: white;
   padding: 4px 4px;
+  border: 3px solid green;
+  margin: 2px;
 }
 .fk-is-dashlet-stats > a {
   display: flex;
