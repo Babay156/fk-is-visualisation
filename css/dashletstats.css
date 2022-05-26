@@ -1,7 +1,7 @@
 .fk-is-dashlet-stats {
   background-color: white;
   padding: 0px 0px;
-  border: 3px solid green !important;
+  border: 4px solid green !important;
   margin: 2px 2px !important;
   width: 180px;
   height: 85px;
@@ -18,14 +18,14 @@
 }
 .fk-is-dashlet-stats--icon {
   display: flex;
-  flex-direction: row;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: center;
   padding-right: 6px;
 }
 .fk-is-dashlet-stats--details {
   display: flex;
-  flex-direction: row;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: center;
 }
 .fk-is-dashlet-stats--details--title {
   color: #6B7280;

@@ -22,14 +22,14 @@ $fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 }
 .fk-is-dashlet-stats--icon{
   display: flex;
-  flex-direction: row;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: center;
   padding-right: 6px;
 }
 .fk-is-dashlet-stats--details{
   display: flex;
-  flex-direction: row;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: center;
 }
 .fk-is-dashlet-stats--details--title {
   color: $fk-is-dashlet-stats--grey;
