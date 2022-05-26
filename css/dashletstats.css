@@ -1,12 +1,6 @@
 .fk-is-dashlet-stats {
   background-color: white;
-}
-.fk-is-dashlet-stats tbody{
-  border: none;
-}
-.fk-is-dashlet-stats td{
-  margin: 2px;
-  border: 3px solid green;
+  padding: 4px 0;
 }
 .fk-is-dashlet-stats > a {
   display: flex;
