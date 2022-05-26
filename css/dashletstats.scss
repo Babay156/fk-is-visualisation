@@ -11,7 +11,10 @@ $fk-is-dashlet-compare-stats--delta-positive--icon--color: #047857;
 
 .fk-is-dashlet-stats{
   background-color: $fk-is-dashlet-stats--white;
-  padding: 4px 0;
+  padding: 4px 4px;
+  border: 4px solid green;
+  width: 220px;
+  height: 110px;
   >a {
     display: flex;
     text-decoration: none;

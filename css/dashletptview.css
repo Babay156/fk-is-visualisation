@@ -1,0 +1,35 @@
+/* 
+    Created on : May 20, 2015, 9:03:22 PM
+    Author     : Austin Leydecker
+*/
+
+.periodic-table {
+    table-layout: auto;
+    border-collapse: collapse;
+    font-family: monospace;
+}
+.periodic-table td {
+    border: none;
+    padding: .35vw;
+}
+.periodic-table td.element {
+    background-color: white;
+}
+.periodic-table .red {
+    border: 3px solid red;
+}
+.periodic-table .yellow {
+    border: 3px solid yellow;
+}
+.periodic-table .green {
+    border: 3px solid green;
+}
+.periodic-table .cyan {
+    border: 3px solid cyan;
+}
+.periodic-table .blue {
+    border: 3px solid blue;
+}
+.periodic-table .unknown {
+    border: 3px solid gray;
+}
