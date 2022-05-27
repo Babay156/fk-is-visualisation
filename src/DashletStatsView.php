@@ -29,14 +29,14 @@ class DashletStatsView{
 		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/UI.php?operation=search&filter=".$sFilter = rawurlencode($this->sFilter->serialize());
 		$oPage->add(
 <<<HTML
-<div id="$sDashletId" class="dashlet-content fk-is-dashlet-stats">
+<div id="$sDashletId" class="dashlet-content ahws-dashlet-stats">
 	<a href="$sLinkUrl">
-	<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
-	<div class="fk-is-dashlet-stats--icon">
+	<div class="ahws-dashlet-stats--icon">
 		$sHtmlIconUrl
 	</div>
-	<div class="fk-is-dashlet-stats--details">
-		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
+	<div class="ahws-dashlet-stats--details">
+		<h2 class="ahws-dashlet-stats--details--title">$sHtmlTitle</h2>
+		<div class="ahws-dashlet-stats--details--value">$sHtmlValue</div>
 	</div>
 	</a>
 </div>
