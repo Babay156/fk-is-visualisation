@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.6">
   <classes>
+      <class id="InformationSystem" _delta="must_exist">
+      <fields>
+        <field id="dashboard" xsi:type="AttributeDashboard" _delta="define">
+          <is_user_editable>true</is_user_editable>
+          <!-- Use this default definition for creating a new dashboard -->
+          <definition>
+            <!-- Later replace the whole definition with the XML export -->
+            <layout>DashboardLayoutOneCol</layout>
+            <title/>
+            <auto_reload>
+              <enabled>false</enabled>
+              <interval>300</interval>
+            </auto_reload>
+            <cells>
+              <cell id="0">
+                <rank>0</rank>
+                <dashlets>
+              <dashlet id="0" xsi:type="DashletStats">
+                <rank>1</rank>
+                <title>&#x418;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x43E;&#x43D;&#x43D;&#x44B;&#x435; &#x421;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x44B;</title>
+                <ShortName>IS</ShortName>
+                <query>SELECT InformationSystem</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+                </dashlets>
+              </cell>
+            </cells>
+          </definition>
+        </field>
+      </fields>
+      <presentation>
+        <!-- Dashboard can only be displayed in the details -->
+        <details>
+          <items>
+            <!-- Dashboard can be displayed neither in a fieldset, nor in a column -->
+            <item id="dashboard" _delta="define">
+              <rank>100</rank>
+            </item>
+          </items>
+        </details>
+      </presentation>
+    </class>
   </classes>
   <menus>
     <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="redefine">
