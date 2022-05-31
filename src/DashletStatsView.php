@@ -19,7 +19,7 @@ class DashletStatsView{
 	{
 		$this->sValue = $sValue;
 		$this->sTitle = $sTitle;
-		$this->sSjortName = $sShortName;
+		$this->sShortName = $sShortName;
 		$this->sClass = $sClass;
 		$this->sFilter = $sFilter;
 	}
@@ -40,8 +40,8 @@ class DashletStatsView{
 	</div>
 	<div class="fk-is-dashlet-stats--details">
 		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
-		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlShortName</h2>
 		<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
+		<h2 class="fk-is-dashlet-stats--details--shortname">$sHtmlShortName</h2>
 	</div>
 	</a>
 </div>

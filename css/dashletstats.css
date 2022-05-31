@@ -30,6 +30,12 @@
   font-weight: 500;
   margin: 0 0 4px;
 }
+.fk-is-dashlet-stats--details--shortname {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
 .fk-is-dashlet-stats--details--value {
   text-decoration: none;
   color: #111827;
