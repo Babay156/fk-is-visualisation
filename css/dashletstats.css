@@ -7,7 +7,7 @@
   height: 85px;
 }
 .fk-is-dashlet-stats > a {
-  display: flex;
+  display: flow-root;
   text-decoration: none;
 }
 .fk-is-dashlet-stats > a:hover {
