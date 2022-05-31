@@ -10,6 +10,7 @@ Dict::Add('EN US', 'English', 'English', array(
 	// Dictionary entries go here
 	'Menu:InformationSystem' => 'Information Systems',
 	'Menu:InformationSystem+' => 'Information Systems',
+	'Class:InformationSystem/Attribute:dashboard' => 'Information Systems',
 	'UI:DashletStats:Icon' => 'Dashlet Icon',
 	'UI:DashletStats:Label' => 'Dashlet Stats',
 	'UI:DashletStats:Description' => 'A dashlet badge grouping aggregate function',

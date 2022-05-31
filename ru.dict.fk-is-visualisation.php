@@ -10,6 +10,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	// Dictionary entries go here
 	'Menu:InformationSystem' => 'Информационные Системы',
 	'Menu:InformationSystem+' => 'Информационные Системы',
+	'Class:InformationSystem/Attribute:dashboard' => 'Информационные Системы',
 	'UI:DashletStats:Icon' => 'Dashlet Icon',
 	'UI:DashletStats:Label' => 'Dashlet Stats',
 	'UI:DashletStats:Description' => 'Дашлет с функциями агрегации и статистики',
