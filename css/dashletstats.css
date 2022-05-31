@@ -1,9 +1,9 @@
 .fk-is-dashlet-stats {
   background-color: white;
-  padding: 0px 0px;
+  padding: 4px 4px;
   border: 4px solid green !important;
   margin: 2px 2px !important;
-  width: 180px;
+  width: 130px;
   height: 85px;
 }
 .fk-is-dashlet-stats > a {
@@ -32,15 +32,16 @@
 }
 .fk-is-dashlet-stats--details--shortname {
   color: #000;
-  font-size: 12px;
+  font-size: 32px;
   font-weight: 500;
   margin: 0 0 4px;
 }
 .fk-is-dashlet-stats--details--value {
   text-decoration: none;
-  color: #111827;
+  color: #6B7280;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
+  text-align: end;
 }
 .fk-is-dashlet-compare-stats--delta {
   display: inline-block;
