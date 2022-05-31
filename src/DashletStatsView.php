@@ -35,20 +35,12 @@ class DashletStatsView{
 <<<HTML
 <div id="$sDashletId" class="dashlet-content fk-is-dashlet-stats">
 	<a href="$sLinkUrl">
-	<div class="fk-is-dashlet-stats--icon">
-		$sHtmlIconUrl
-	</div>
-	<div class="fk-is-dashlet-stats--details">
-		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
-		<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
-		<h2 class="fk-is-dashlet-stats--details--shortname">$sHtmlShortName</h2>
-	</div>
+	<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
+	<div class="fk-is-dashlet-stats--details--shortname">$sHtmlShortName</div>
+	<div class="fk-is-dashlet-stats--details--title">$sHtmlTitle</div>
 	</a>
 </div>
 HTML
 		);
-
 	}
-
-
 }
