@@ -5,6 +5,7 @@ class DashletStats extends Dashlet
 	{
 		parent::__construct($oModelReflection, $sId);
 		$this->aProperties['title'] = '';
+		$this->aProperties['ShortName'] = '';
 		$this->aProperties['query'] = 'SELECT ';
 		$this->aProperties['function'] = 'count';
 		$this->aProperties['function_attribute'] = '';
@@ -31,6 +32,9 @@ class DashletStats extends Dashlet
 	public function GetPropertiesFields(DesignerForm $oForm)
 	{
 		$oField = new DesignerTextField('title', Dict::S('UI:DashletStats:Prop:Title'), $this->aProperties['title']);
+		$oForm->AddField($oField);
+
+		$oField = new DesignerTextField('ShortName', Dict::S('UI:DashletStats:Prop:ShortName'), $this->aProperties['ShortName']);
 		$oForm->AddField($oField);
 
 		$oField = new DesignerLongTextField('query', Dict::S('UI:DashletStats:Prop:Query'), $this->aProperties['query']);
@@ -135,6 +139,7 @@ class DashletStats extends Dashlet
 	public function Render($oPage, $bEditMode = false, $aExtraParams = array())
 	{
 		$sTitle = $this->aProperties['title'];
+		$sShortName = $this->aProperties['ShortName'];
 		$sQuery = $this->aProperties['query'];
 		$sFunction = $this->aProperties['function'];
 		$sAttr = $this->aProperties['function_attribute'];
@@ -219,7 +224,7 @@ class DashletStats extends Dashlet
 		$sDashletValue = ($sUnitPosition === 'before' ? $sUnit.$sDashletValue : $sDashletValue.$sUnit);
 		 
 		
-		$oDashletView = new DashletStatsView($sTitle,	$sDashletValue, $sClass, $oFilter);
+		$oDashletView = new DashletStatsView($sTitle, $sShortName, $sDashletValue, $sClass, $oFilter);
 		$oDashletView->Display($oPage, 'block_'.$this->sId.($bEditMode ? '_edit' : ''),	$bEditMode);
 	}
 }

@@ -20,6 +20,7 @@ Dict::Add('EN US', 'English', 'English', array(
 	'UI:DashletStats:Label' => 'Dashlet Stats',
 	'UI:DashletStats:Description' => 'A dashlet badge grouping aggregate function',
 	'UI:DashletStats:Prop:Title' => 'Title',
+	'UI:DashletStats:Prop:ShortName' => 'ShortName',
 	'UI:DashletStats:Prop:Query' => 'Query',
 	'UI:DashletStats:Prop:Function' => 'Aggregate function',
 	'UI:DashletStats:Prop:Function:Count' => 'Count',

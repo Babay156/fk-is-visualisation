@@ -2,6 +2,7 @@
 class DashletStatsView{
 	private $sValue;
 	private $sTitle;
+	private $sShortName;
 	private $sClass;
 	private $sFilter;
 
@@ -9,6 +10,7 @@ class DashletStatsView{
 	 * DashletGroupByPlusView constructor.
 	 *
 	 * @param $sTitle
+	 * @param $sShortName
 	 * @param $sValue
 	 * @param $sClass
 	 * @param $sFilter
@@ -17,6 +19,7 @@ class DashletStatsView{
 	{
 		$this->sValue = $sValue;
 		$this->sTitle = $sTitle;
+		$this->sSjortName = $sShortName;
 		$this->sClass = $sClass;
 		$this->sFilter = $sFilter;
 	}
@@ -24,6 +27,7 @@ class DashletStatsView{
 	{
 		
 		$sHtmlTitle = $this->sTitle;
+		$sHtmlShortName = $this->sShortName;
 		$sHtmlValue = $this->sValue;
 		$sHtmlIconUrl = MetaModel::GetClassIcon($this->sClass);
 		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/UI.php?operation=search&filter=".$sFilter = rawurlencode($this->sFilter->serialize());
@@ -36,6 +40,7 @@ class DashletStatsView{
 	</div>
 	<div class="fk-is-dashlet-stats--details">
 		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlTitle</h2>
+		<h2 class="fk-is-dashlet-stats--details--title">$sHtmlShortName</h2>
 		<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
 	</div>
 	</a>
