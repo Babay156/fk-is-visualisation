@@ -70,6 +70,7 @@
 #InformationSystem .layout_last_used_rank {
   border: none !important;
   display: flex !important;
+  flex-wrap: wrap !important;
   align-content: flex-start !important;
   justify-content: start !important;
 }
