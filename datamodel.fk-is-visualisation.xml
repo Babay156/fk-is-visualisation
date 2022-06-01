@@ -57,6 +57,7 @@
       <parent>ConfigManagement</parent>
       <definition>
         <layout>DashboardLayoutOneCol</layout>
+        <title></title>
         <auto_reload>
         <enabled>false</enabled>
         <interval>300</interval>
