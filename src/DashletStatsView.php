@@ -21,7 +21,7 @@ class DashletStatsView{
 		$this->sValue = $sValue;
 		$this->sTitle = $sTitle;
 		$this->sShortName = $sShortName;
-		$this->$sColor = $sColor
+		$this->$sColor = $sColor;
 		$this->sClass = $sClass;
 		$this->sFilter = $sFilter;
 	}
