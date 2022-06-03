@@ -34,11 +34,11 @@ class DashletStatsView{
 		$sHtmlColor = $this->sColor;
 		$sHtmlValue = $this->sValue;
 		$sHtmlClass = $this->$sClass;
-		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/ajax.render.php?operation=dashboard&class=InformationSystem&id=142&attcode=dashboard;
+		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/ajax.render.php?operation=dashboard&class=InformationSystem&id=142&attcode=dashboard";
 		$oPage->add(
 <<<HTML
 <div id="$sDashletId" class="dashlet-content fk-is-dashlet-$sHtmlShortName">
-	<a href="$sLinkUrl">
+	<a href="$sLinkUrl"
 	<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
 	<div class="fk-is-dashlet-stats--details--shortname">$sHtmlShortName</div>
 	<div class="fk-is-dashlet-stats--details--title">$sHtmlTitle</div>
@@ -49,4 +49,3 @@ HTML
 	}
 }
 
-https://itop.half-path.ru/pages/ajax.render.php?operation=dashboard&class=InformationSystem&id=142&attcode=dashboard
