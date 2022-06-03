@@ -33,8 +33,8 @@ class DashletStatsView{
 		$sHtmlShortName = $this->sShortName;
 		$sHtmlColor = $this->sColor;
 		$sHtmlValue = $this->sValue;
-		$sHtmlIconUrl = MetaModel::GetClassIcon($this->sClass);
-		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/UI.php?operation=search&filter=".$sFilter = rawurlencode($this->sFilter->serialize());
+		$sHtmlClass = $this->$sClass;
+		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/ajax.render.php?operation=dashboard&class=$sHtmlClass&id=142&attcode=dashboard";
 		$oPage->add(
 <<<HTML
 <div id="$sDashletId" class="dashlet-content fk-is-dashlet-$sHtmlShortName">
@@ -48,3 +48,5 @@ HTML
 		);
 	}
 }
+
+https://itop.half-path.ru/pages/ajax.render.php?operation=dashboard&class=InformationSystem&id=142&attcode=dashboard
