@@ -229,7 +229,7 @@ class DashletStats extends Dashlet
 		$sDashletValue = ($sUnitPosition === 'before' ? $sUnit.$sDashletValue : $sDashletValue.$sUnit);
 		 
 		
-		$oDashletView = new DashletStatsView($sTitle, $sShortName, $Color, $sDashletValue, $sClass, $oFilter);
+		$oDashletView = new DashletStatsView($sTitle, $sShortName, $sColor, $sDashletValue, $sClass, $oFilter);
 		$oDashletView->Display($oPage, 'block_'.$this->sId.($bEditMode ? '_edit' : ''),	$bEditMode);
 	}
 }

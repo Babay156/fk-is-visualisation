@@ -14,6 +14,30 @@
     width: 125px;
     height: 90px;
 }
+.fk-is-dashlet-green {
+  background-color: white;
+  padding: 4px 4px;
+  border: 4px solid green !important;
+  margin: 2px 2px !important;
+  width: 125px;
+  height: 90px;
+}
+.fk-is-dashlet-yellow {
+  background-color: white;
+  padding: 4px 4px;
+  border: 4px solid yellow !important;
+  margin: 2px 2px !important;
+  width: 125px;
+  height: 90px;
+}
+.fk-is-dashlet-green {
+  background-color: white;
+  padding: 4px 4px;
+  border: 4px solid green !important;
+  margin: 2px 2px !important;
+  width: 125px;
+  height: 90px;
+}
 .fk-is-dashlet-stats > a {
   display: flow-root;
   text-decoration: none;
