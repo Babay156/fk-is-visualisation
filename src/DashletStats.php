@@ -41,7 +41,6 @@ class DashletStats extends Dashlet
 		$oField = new DesignerTextField('Color', Dict::S('UI:DashletStats:Prop:Color'), $this->aProperties['Color']);
 		$oForm->AddField($oField);
 
-
 		$oField = new DesignerLongTextField('query', Dict::S('UI:DashletStats:Prop:Query'), $this->aProperties['query']);
 		$oField->SetMandatory();
 		$oForm->AddField($oField);
@@ -230,7 +229,7 @@ class DashletStats extends Dashlet
 		$sDashletValue = ($sUnitPosition === 'before' ? $sUnit.$sDashletValue : $sDashletValue.$sUnit);
 		 
 		
-		$oDashletView = new DashletStatsView($sTitle, $sShortName, $sDashletValue, $sClass, $oFilter);
+		$oDashletView = new DashletStatsView($sTitle, $sShortName, $Color, $sDashletValue, $sClass, $oFilter);
 		$oDashletView->Display($oPage, 'block_'.$this->sId.($bEditMode ? '_edit' : ''),	$bEditMode);
 	}
 }
