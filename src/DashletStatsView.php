@@ -38,7 +38,8 @@ class DashletStatsView{
 		$oPage->add(
 <<<HTML
 <div id="$sDashletId" class="dashlet-content fk-is-dashlet-stats">
-	<a class="$sHtmlColor" href="$sLinkUrl">
+	$sHtmlColor
+	<a href="$sLinkUrl">
 	<div class="fk-is-dashlet-stats--details--value">$sHtmlValue</div>
 	<div class="fk-is-dashlet-stats--details--shortname">$sHtmlShortName</div>
 	<div class="fk-is-dashlet-stats--details--title">$sHtmlTitle</div>
