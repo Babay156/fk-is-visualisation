@@ -34,7 +34,7 @@ class DashletStatsView{
 		$sHtmlColor = $this->sColor;
 		$sHtmlValue = $this->sValue;
 		$sHtmlClass = $this->$sClass;
-		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/ajax.render.php?operation=dashboard&class=$sHtmlClass&id=142&attcode=dashboard";
+		$sLinkUrl = utils::GetAbsoluteUrlAppRoot()."pages/ajax.render.php?operation=dashboard&class=InformationSystem&id=142&attcode=dashboard;
 		$oPage->add(
 <<<HTML
 <div id="$sDashletId" class="dashlet-content fk-is-dashlet-$sHtmlShortName">
