@@ -17,7 +17,7 @@ class DashletStatsView{
 	 * @param $sClass
 	 * @param $sFilter
 	 */
-	public function __construct($sTitle, $sColor, $sShortName, $sValue, $sClass, $sFilter) 
+	public function __construct($sTitle, $sShortName, $sColor, $sValue, $sClass, $sFilter) 
 	{
 		$this->sValue = $sValue;
 		$this->sTitle = $sTitle;
