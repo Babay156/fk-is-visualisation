@@ -18,65 +18,113 @@
               <cell id="0">
                 <rank>0</rank>
                 <dashlets>
-                  <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_1" xsi:type="DashletStats">
-                    <rank>0</rank>
-                    <title>&#x41A;&#x43E;&#x43D;&#x442;&#x440;&#x430;&#x43A;&#x442;&#x44B;</title>
-                    <ShortName>K</ShortName>
-                    <Color>red</Color>
-                    <query>SELECT Contract</query>
-                    <function>count</function>
-                    <function_attribute></function_attribute>
-                    <unit></unit>
-                    <unit_position>after</unit_position>
-                    <percentage_query></percentage_query>
-                  </dashlet>
-                  <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_2" xsi:type="DashletStats">
-                    <rank>1</rank>
-                    <title>LanDocs</title>
-                    <ShortName>Ld</ShortName>
-                    <Color>green</Color>
-                    <query>SELECT `ApplicationSolution`</query>
-                    <function>count</function>
-                    <function_attribute></function_attribute>
-                    <unit></unit>
-                    <unit_position>after</unit_position>
-                    <percentage_query></percentage_query>
-                  </dashlet>
-                  <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_3" xsi:type="DashletStats">
-                    <rank>2</rank>
-                    <title>&#x418;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x43E;&#x43D;&#x43D;&#x44B;&#x435; &#x421;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x44B;</title>
-                    <ShortName>Is</ShortName>
-                    <Color>blue</Color>
-                    <query>SELECT InformationSystem</query>
-                    <function>count</function>
-                    <function_attribute></function_attribute>
-                    <unit></unit>
-                    <unit_position>after</unit_position>
-                    <percentage_query></percentage_query>
-                  </dashlet>
-                  <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_4" xsi:type="DashletStats">
-                    <rank>3</rank>
-                    <title>&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x44B;</title>
-                    <ShortName>Co</ShortName>
-                    <Color>blue</Color>
-                    <query>SELECT Contact</query>
-                    <function>count</function>
-                    <function_attribute></function_attribute>
-                    <unit></unit>
-                    <unit_position>after</unit_position>
-                    <percentage_query></percentage_query>
-                  </dashlet>
-                </dashlets>
-              </cell>
-              <cell id="1">
+                <dashlet id="0" xsi:type="DashletStats">
                 <rank>1</rank>
-                <dashlets>
-                  <dashlet id="0" xsi:type="DashletEmptyCell">
-                    <rank>0</rank>
-                  </dashlet>
+                <title>&#x418;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x43E;&#x43D;&#x43D;&#x44B;&#x435; &#x421;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x44B;</title>
+                <ShortName>IS</ShortName>
+                <query>SELECT ApplicationSolution</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
                 </dashlets>
               </cell>
             </cells>
+          </definition>
+        </field>
+      </fields>
+      <presentation>
+        <!-- Dashboard can only be displayed in the details -->
+        <details>
+          <items>
+            <!-- Dashboard can be displayed neither in a fieldset, nor in a column -->
+            <item id="dashboard" _delta="define">
+              <rank>100</rank>
+            </item>
+          </items>
+        </details>
+      </presentation>
+    </class>
+  </classes>
+  <menus>
+    <menu id="ConfigManagement" xsi:type="MenuGroup" _delta="redefine">
+      <rank>20</rank>
+    </menu>
+    <menu id="InformationSystem" xsi:type="DashboardMenuNode" _delta="define">
+      <rank>7</rank>
+      <parent>ConfigManagement</parent>
+      <definition>
+        <layout>DashboardLayoutOneCol</layout>
+        <title></title>
+        <auto_reload>
+        <enabled>false</enabled>
+        <interval>300</interval>
+        </auto_reload>
+        <cells>
+          <cell id="0">
+            <rank>0</rank>
+            <dashlets>
+              <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_1" xsi:type="DashletStats">
+                <rank>0</rank>
+                <title>&#x41A;&#x43E;&#x43D;&#x442;&#x440;&#x430;&#x43A;&#x442;&#x44B;</title>
+                <ShortName>K</ShortName>
+                <Color>red</Color>
+                <query>SELECT Contract</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+              <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_2" xsi:type="DashletStats">
+                <rank>1</rank>
+                <title>LanDocs</title>
+                <ShortName>Ld</ShortName>
+                <Color>green</Color>
+                <query>SELECT `ApplicationSolution`</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+              <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_3" xsi:type="DashletStats">
+                <rank>2</rank>
+                <title>&#x418;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x43E;&#x43D;&#x43D;&#x44B;&#x435; &#x421;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x44B;</title>
+                <ShortName>Is</ShortName>
+                <Color>blue</Color>
+                <query>SELECT InformationSystem</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+              <dashlet id="CUSTOM_InformationSystem_ID_row0_col0_4" xsi:type="DashletStats">
+                <rank>3</rank>
+                <title>&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x44B;</title>
+                <ShortName>Co</ShortName>
+                <Color>blue</Color>
+                <query>SELECT Contact</query>
+                <function>count</function>
+                <function_attribute></function_attribute>
+                <unit></unit>
+                <unit_position>after</unit_position>
+                <percentage_query></percentage_query>
+              </dashlet>
+            </dashlets>
+          </cell>
+          <cell id="1">
+            <rank>1</rank>
+            <dashlets>
+              <dashlet id="0" xsi:type="DashletEmptyCell">
+                <rank>0</rank>
+              </dashlet>
+            </dashlets>
+          </cell>
+        </cells>
       </definition>
     </menu>
   </menus>
