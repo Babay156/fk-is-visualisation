@@ -16,6 +16,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:DashletStats:Description' => 'Дашлет с функциями агрегации и статистики',
 	'UI:DashletStats:Prop:Title' => 'Заголовок',
 	'UI:DashletStats:Prop:ShortName' => 'Обозначение',
+	'UI:DashletStats:Prop:Color' => 'Цвет',
 	'UI:DashletStats:Prop:Query' => 'Запрос',
 	'UI:DashletStats:Prop:Function' => 'Функции агрегации',
 	'UI:DashletStats:Prop:Function:Count' => 'Количество',

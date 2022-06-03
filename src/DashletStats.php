@@ -6,6 +6,7 @@ class DashletStats extends Dashlet
 		parent::__construct($oModelReflection, $sId);
 		$this->aProperties['title'] = '';
 		$this->aProperties['ShortName'] = '';
+		$this->aProperties['Color'] = '';
 		$this->aProperties['query'] = 'SELECT ';
 		$this->aProperties['function'] = 'count';
 		$this->aProperties['function_attribute'] = '';
@@ -36,6 +37,10 @@ class DashletStats extends Dashlet
 
 		$oField = new DesignerTextField('ShortName', Dict::S('UI:DashletStats:Prop:ShortName'), $this->aProperties['ShortName']);
 		$oForm->AddField($oField);
+
+		$oField = new DesignerTextField('Color', Dict::S('UI:DashletStats:Prop:Color'), $this->aProperties['Color']);
+		$oForm->AddField($oField);
+
 
 		$oField = new DesignerLongTextField('query', Dict::S('UI:DashletStats:Prop:Query'), $this->aProperties['query']);
 		$oField->SetMandatory();
@@ -140,6 +145,7 @@ class DashletStats extends Dashlet
 	{
 		$sTitle = $this->aProperties['title'];
 		$sShortName = $this->aProperties['ShortName'];
+		$sColor = $this->aProperties['Color'];
 		$sQuery = $this->aProperties['query'];
 		$sFunction = $this->aProperties['function'];
 		$sAttr = $this->aProperties['function_attribute'];
