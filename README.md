@@ -8,8 +8,8 @@ cd <iTop>/extensions
 git clone https://github.com/Babay156/fk-is-visualisation.git
 chmod +w ../conf/production/config-itop.php
 ```
-#проверяем тулкитом:
+#проверяем тулкитом:<br>
 http://iTop/toolkit
-<p></p>
-<p>#устанавливаем расширение:</p>
+<br>
+#устанавливаем расширение:<br>
 http://iTop/setup
