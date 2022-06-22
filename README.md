@@ -10,6 +10,6 @@ chmod +w ../conf/production/config-itop.php
 ```
 <p>#проверяем тулкитом:</p>
 http://iTop/toolkit
-
+<p></p>
 <p>#устанавливаем расширение:</p>
 http://iTop/setup
